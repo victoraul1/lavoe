@@ -2,17 +2,30 @@
 lavoe_voice_web/
 LavoeBackend/
 
+# Environment variables
+.env
+
 # Node.js dependencies
 node_modules/
+npm-debug.log
+yarn-debug.log
+yarn-error.log
 
 # Flutter build artifacts
 build/
 .dart_tool/
 
+# Temporary files
+tmp/
+temp/
+uploads/
+*.wav
+
 # macOS specific files
 .DS_Store
+Thumbs.db
 
 # IDE files
 .idea/
 .vscode/
-*.iml 
+*.iml

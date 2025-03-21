@@ -9,6 +9,7 @@ This repository is the main project container with links to the following compon
 1. **Backend Server**: [lavoe-backend](https://github.com/victoraul1/lavoe-backend)
    - Node.js server that processes voice commands and updates web content
    - Includes natural language processing capabilities
+   - Uses OpenAI API (Whisper for transcription, GPT for command processing)
 
 2. **Flutter Web App**: [lavoe-flutter](https://github.com/victoraul1/lavoe-flutter)
    - Cross-platform application for recording and sending voice commands
@@ -20,6 +21,7 @@ This repository is the main project container with links to the following compon
 - **Web Content Management**: Modify welcome messages, about sections, services, and contact information
 - **Real-time Updates**: Changes are applied immediately to the website
 - **English Language Support**: All commands and responses are in English
+- **AI Content Processing**: Intelligent understanding of your intent
 
 ## Getting Started
 
@@ -46,6 +48,34 @@ This repository is the main project container with links to the following compon
 └─────────────────┘     └─────────────────┘     └─────────────────┘
 ```
 
+## Backend Server
+
+### Technologies Used
+
+- Node.js
+- Express
+- OpenAI API
+
+### Setup
+
+1. Create a `.env` file in the backend directory with your OpenAI API key:
+```
+OPENAI_API_KEY=your_api_key_here
+PORT=3000
+```
+
+2. Start the server:
+```
+node index.js
+```
+
+### API Endpoints
+
+- `/ping`: Test connection
+- `/process-voice`: Process voice commands
+- `/execute-action`: Manually execute actions
+- `/api/content`: Content manipulation API
+
 ## Example Commands
 
 - "Update the welcome message to say hello to everyone"
@@ -59,4 +89,4 @@ This project is proprietary and confidential. Unauthorized copying, transfer, or
 
 ## Contact
 
-For support or inquiries, please contact [your-email@example.com]. 
+For support or inquiries, please contact [your-email@example.com].
