@@ -1,0 +1,18 @@
+# Ignore directories that have their own Git repositories
+lavoe_voice_web/
+LavoeBackend/
+
+# Node.js dependencies
+node_modules/
+
+# Flutter build artifacts
+build/
+.dart_tool/
+
+# macOS specific files
+.DS_Store
+
+# IDE files
+.idea/
+.vscode/
+*.iml 
